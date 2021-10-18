@@ -1,3 +1,112 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(37, 47, 65);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  padding-bottom: 150px;
+}
+
+.logo {
+  position: relative;
+  top: 4em;
+  left: 4em;
+}
+
+.nav-header {
+  display: inline-block;
+  position: relative;
+  left: 77em;
+  top: 2.8em;
+}
+
+.link-nav {
+  color: whitesmoke;
+  margin-right: 60px;
+  text-decoration: none;
+}
+
+.div-image {
+  width: 720px;
+  margin-left: 500px;
+}
+
+.section-principal {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  width: 720px;
+  margin: 50px auto;
+  color: whitesmoke;
+}
+
+.text-section-principal {
+  color: whitesmoke;
+  width: 600px;
+  margin: 50px auto;
+}
+
+.link-section-principal {
+  color: whitesmoke;
+  background-color: turquoise;
+  text-decoration: none;
+  padding: 15px 60px;
+  border-radius: 25px;
+}
+
+.background {
+  position: relative;
+  z-index: -1;
+  top: -200px;
+  width: 100%;
+}
+
+.section-content {
+  background-color: rgb(24, 31, 43);
+  position: relative;
+  top: -210px;
+}
+
+.section-security {
+  position: relative;
+  background-color: rgb(105, 140, 136);
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.article-security {
+  width: 400px;
+}
+
+.article-security-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.article-security-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.article-security-three {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.article-security-four {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
