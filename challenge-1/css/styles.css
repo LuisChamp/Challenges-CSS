@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .logo {
@@ -62,9 +62,9 @@ body {
 }
 
 .background {
-  position: relative;
+  position: absolute;
   z-index: -1;
-  top: -200px;
+  top: 700px;
   width: 100%;
 }
 
@@ -76,9 +76,9 @@ body {
 
 .section-security {
   position: relative;
-  background-color: rgb(105, 140, 136);
-  width: 800px;
-  height: 500px;
+
+  width: 900px;
+  height: 450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -90,7 +90,7 @@ body {
 
 .article-security-one {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
 }
 
@@ -110,4 +110,275 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.section-content {
+  margin-top: 400px;
+  padding-bottom: 450px;
+}
+
+.text-section-two,
+.title-section-two {
+  color: whitesmoke;
+}
+
+.title-section-two {
+  font-weight: bold;
+}
+
+.text-section-two {
+  font-size: 0.8em;
+}
+
+.section-productivity {
+  margin-top: 150px;
+  margin-bottom: 200px;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-section-three {
+  display: inline-block;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 70px;
+}
+
+.title-two {
+  color: whitesmoke;
+  font-size: 2.5em;
+  width: 350px;
+}
+
+.content-section-three {
+  color: whitesmoke;
+  font-size: 0.9em;
+}
+
+.link-section-three {
+  color: rgb(12, 226, 226);
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.content-one {
+  width: 500px;
+  line-height: 25px;
+}
+
+.content-two {
+  width: 570px;
+  line-height: 25px;
+}
+
+.image-productivity {
+  width: 750px;
+}
+
+.section-comments {
+  position: relative;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment {
+  background-color: rgb(31, 40, 55);
+  display: inline-block;
+  width: 450px;
+  height: 250px;
+  box-shadow: 5px 5px 10px rgb(39, 49, 67);
+  border-radius: 10px;
+}
+
+.comment-one {
+  margin-right: 60px;
+}
+
+.comment-two {
+  margin-right: 60px;
+}
+
+.text-comment {
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  width: 390px;
+  margin-top: 70px;
+  line-height: 23px;
+}
+
+.profile-one {
+  position: relative;
+  left: 35px;
+  top: 30px;
+}
+
+.image-profile {
+  width: 25px;
+  border-radius: 50%;
+  position: relative;
+  right: 5px;
+  top: -2px;
+}
+
+.description-profile {
+  display: inline-block;
+}
+
+.name-profile,
+.sub-profile {
+  line-height: 5px;
+  color: whitesmoke;
+}
+
+.name-profile {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.sub-profile {
+  font-size: 0.6em;
+}
+
+.quotes {
+  position: absolute;
+  left: 120px;
+  top: 1335px;
+}
+
+.access {
+  background-color: rgb(31, 40, 55);
+  width: 1100px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -400px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(16, 19, 26);
+}
+
+.title-access,
+.text-access {
+  color: whitesmoke;
+}
+
+.title-access {
+  padding-top: 40px;
+  font-size: 2em;
+}
+
+.text-access {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.input-email {
+  width: 550px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+
+.input-button {
+  padding: 15px 30px;
+  background-color: turquoise;
+  color: whitesmoke;
+  border-radius: 30px;
+}
+
+footer {
+  height: 50px;
+}
+
+.footer {
+  position: relative;
+  top: -400px;
+}
+
+.logo-footer {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  z-index: 1;
+}
+
+.footer-down {
+  height: 300px;
+  position: relative;
+  top: 50px;
+}
+
+.footer-section {
+  display: inline-block;
+  color: whitesmoke;
+}
+
+.footer-section-one {
+  position: absolute;
+  width: 400px;
+  top: 150px;
+  left: 150px;
+}
+
+.image-location {
+  position: absolute;
+  left: -30px;
+  bottom: 60px;
+}
+
+.footer-section-two {
+  position: absolute;
+  left: 650px;
+  bottom: 95px;
+}
+
+.footer-section-three {
+  position: absolute;
+  left: 650px;
+  bottom: 50px;
+  top: 200px;
+}
+
+.text-footer {
+  display: inline-block;
+}
+
+.footer-section-four {
+  position: absolute;
+  left: 1000px;
+  top: 160px;
+}
+
+.part-one {
+  width: 90px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.part-two {
+  position: absolute;
+  left: 150px;
+  width: 90px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.link-footer {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer-section-five {
+  position: absolute;
+  top: 160px;
+  right: 120px;
 }
