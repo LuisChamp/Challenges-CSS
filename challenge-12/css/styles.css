@@ -5,4 +5,142 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+  background-color: tomato;
+}
+
+.section {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+  row-gap: 40px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  grid-area: header;
+}
+
+.nav__items {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 1em;
+}
+
+.header__title {
+  font-size: 2em;
+  color: #fff;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas: "container image";
+  align-items: center;
+  grid-area: main;
+  justify-items: start;
+}
+
+.main__text {
+  grid-area: container;
+}
+
+.image {
+  grid-area: image;
+  width: 100%;
+}
+
+.main__title {
+  font-size: 2.8em;
+  margin-bottom: 0.5rem;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.main__subtitle {
+  font-size: 1.3em;
+  margin-bottom: 2.5rem;
+}
+
+.main__link {
+  padding: 15px 50px;
+  border: 1px solid white;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+}
+
+.main__link:hover {
+  background-color: #fff;
+  color: #2a5298;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-rows: max-content max-content;
+    grid-template-areas:
+      "image"
+      "content";
+  }
+
+  .image {
+    width: 80%;
+    grid-area: image;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main__text {
+    grid-area: content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .main__title {
+    font-size: 2em;
+  }
+
+  .main__subtitle {
+    font-size: 1em;
+  }
+
+  .section {
+    width: 80%;
+  }
+
+  .waves {
+    z-index: -10;
+  }
+
+  .nav {
+    display: none;
+  }
 }
