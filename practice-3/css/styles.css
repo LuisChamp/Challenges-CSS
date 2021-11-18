@@ -1,3 +1,52 @@
 body {
   background-color: gray;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.div {
+  background-color: rgb(65, 43, 145);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation-name: mover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0px);
+    transform: scale(0.5);
+  }
+
+  25% {
+    transform: translateX(250px);
+    background-color: khaki;
+  }
+
+  50% {
+    transform: translate(250px, 250px);
+    background-color: rgb(43, 155, 93);
+  }
+
+  75% {
+    transform: translate(0px, 250px);
+    background-color: rgb(139, 28, 61);
+  }
+}
+
+.title {
+  background-color: lawngreen;
+  width: 480px;
+  margin: 100px auto;
+  transition-property: width;
+  /*transition-timing-function: ;
+  transition-delay: ;*/
+  transition-duration: 4s;
+}
+
+.title:hover {
+  background-color: rebeccapurple;
+  width: 100px;
 }
