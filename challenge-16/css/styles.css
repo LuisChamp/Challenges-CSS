@@ -48,7 +48,7 @@ body {
 }
 
 .header__right_link {
-  background-color: rgb(64, 86, 252);
+  background-color: rgb(75, 96, 255);
   color: white;
   padding: 18px 20px;
   border-radius: 5px;
@@ -93,6 +93,7 @@ body {
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .section__check {
@@ -179,6 +180,7 @@ body {
   .section_principal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, min-content);
+    gap: 50px;
   }
 
   .section__content {
@@ -187,6 +189,39 @@ body {
 
   .section__image {
     grid-row: 1 / 2;
-    justify-content: center;
+    justify-content: end;
+    max-width: 600px;
+  }
+
+  .main {
+    width: 90%;
+    margin: 70px auto 50px auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    margin: 20px auto 20px auto;
+  }
+
+  .section__image {
+    height: 350px;
+  }
+
+  .section__text {
+    line-height: 25px;
+  }
+
+  .input__email {
+    width: 100%;
+  }
+
+  .input__submit {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
   }
 }
