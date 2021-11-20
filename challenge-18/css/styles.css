@@ -6,3 +6,153 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
+.main {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.nav__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav__item,
+.nav__item_join {
+  text-decoration: none;
+  color: gray;
+}
+
+.nav__item_join {
+  background-color: rgb(55, 40, 101);
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.section__images {
+  display: flex;
+}
+
+.section__img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+}
+
+.section__description {
+  display: inline-block;
+  background-color: rgb(55, 40, 101);
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.section__title,
+.section__text {
+  margin: 0;
+}
+
+.section__link {
+  color: white;
+}
+
+.section__title {
+  font-size: 3rem;
+  color: rgb(55, 40, 101);
+  margin-bottom: 20px;
+}
+
+.section__text {
+  color: gray;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 70%;
+}
+
+.input__email {
+  padding: 15px 20px;
+  width: 70%;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.input__button {
+  cursor: pointer;
+  background-color: rgb(55, 40, 101);
+  padding: 17px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.section__content {
+  align-self: center;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer_text {
+  color: gray;
+}
+
+.footer__img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1110px) {
+  .input__email {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav__items {
+    display: none;
+  }
+
+  .section__img {
+    display: none;
+  }
+  .section {
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    text-align: center;
+  }
+
+  .form {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .input__email,
+  .input__button {
+    width: 100%;
+  }
+
+  .input__email {
+    margin-bottom: 20px;
+  }
+}
