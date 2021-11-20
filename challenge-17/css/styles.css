@@ -3,10 +3,14 @@
 }
 
 body {
+  margin: 0;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.section {
   width: 85%;
   margin: 50px auto;
-  background-color: rgb(228, 203, 203);
-  font-family: sans-serif;
 }
 
 .header {
@@ -39,7 +43,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: repeat(2, max-content);
-  gap: 20px;
+  gap: 100px;
 }
 
 .article__principal {
@@ -63,5 +67,115 @@ body {
 }
 
 .article__img {
-  width: 200px;
+  width: 100%;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.article__title {
+  font-size: 3rem;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.article__text {
+  color: gray;
+  line-height: 25px;
+}
+
+.article__profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile__content {
+  margin-left: 20px;
+  line-height: 5px;
+  text-align: center;
+}
+
+.profile__name {
+  font-weight: bold;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 50px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px rgba(184, 184, 184, 0.5);
+  border-radius: 5px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.article__title,
+.article__text,
+.article__profile {
+  margin: 0;
+  padding: 0px 20px 0 20px;
+}
+
+.article__profile {
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: gray;
+}
+
+.article:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .article__principal {
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: 100%;
+  }
+
+  .main__img {
+    width: 100%;
+  }
+
+  .articles {
+    grid-template-rows: repeat(3, max-content);
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .nav__items {
+    display: none;
+  }
+
+  .article__title {
+    font-size: 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    width: 100px;
+  }
 }
