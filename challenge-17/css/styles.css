@@ -3,7 +3,65 @@
 }
 
 body {
-  background-color: gray;
-  margin: 0;
+  width: 85%;
+  margin: 50px auto;
+  background-color: rgb(228, 203, 203);
   font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.nav__items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav__item,
+.nav__item_subscribe {
+  text-decoration: none;
+  color: gray;
+}
+
+.nav__item_subscribe {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  gap: 20px;
+}
+
+.article__principal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-template-rows: 1fr;
+  gap: 5%;
+}
+
+.main__img {
+  width: 100%;
+}
+
+.profile__img {
+  width: 50px;
+}
+
+.article__content {
+  width: 100%;
+}
+
+.article__img {
+  width: 200px;
 }
