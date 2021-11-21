@@ -31,6 +31,10 @@ body {
   color: gray;
 }
 
+.nav__item:hover {
+  text-decoration: underline;
+}
+
 .nav__item_join {
   background-color: rgb(55, 40, 101);
   padding: 15px 20px;
@@ -103,6 +107,10 @@ body {
   border: none;
 }
 
+.input__button:hover {
+  background-color: rgb(38, 27, 68);
+}
+
 .section__content {
   align-self: center;
 }
@@ -116,8 +124,13 @@ body {
 }
 
 .footer__img {
+  cursor: pointer;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.footer__img:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1110px) {
