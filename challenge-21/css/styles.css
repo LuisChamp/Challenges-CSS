@@ -305,10 +305,21 @@ body {
   .section__two__mockup {
     right: 0%;
   }
+  .article__one_content {
+    padding-bottom: 350px;
+  }
+
+  .social_delete {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .section__two__mockup {
     right: -10%;
+  }
+
+  .article__one_content {
+    padding-bottom: 300px;
   }
 }
