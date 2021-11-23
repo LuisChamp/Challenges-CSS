@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  background-color: gray;
+  width: 800px;
+  height: 500px;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  transition: 0.5s;
+}
+
+.clip1 {
+  clip-path: polygon(0 0, 50% 0, 0 100%, 0% 100%);
+}
+
+.clip2 {
+  clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
+}
+
+.clip3 {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 10;
+}
+
+.text {
+  background-color: whitesmoke;
+  position: absolute;
+  font-weight: bold;
+  width: 600px;
+  padding: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.container:hover .text {
+  opacity: 1;
+  z-index: 20;
+  bottom: 20px;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  background-image: url(/practice-4/assets/images/wave.png);
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1600px;
+  }
+}
